@@ -39,7 +39,6 @@ public class ProductRestController
 	public ResponseEntity<Product> getOneProduct(@PathVariable int id)
 	{
 		Product p=service.getOneProduct(id);
-		System.out.println("One Object returned");
 		return ResponseEntity.ok(p);
 	}
 }
